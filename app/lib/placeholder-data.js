@@ -12,7 +12,7 @@ const users = [
 const customers = [
   {
     id: '3958dc9e-712f-4377-85e9-fec4b6a6442a',
-    name: 'Delba de Oliveira',
+    name: 'Narnia de Oliveira',
     email: 'delba@oliveira.com',
     image_url: '/customers/delba-de-oliveira.png',
   },
@@ -36,7 +36,7 @@ const customers = [
   },
   {
     id: '3958dc9e-787f-4377-85e9-fec4b6a6442a',
-    name: 'Steph Dietz',
+    name: 'Peevis Dietz',
     email: 'steph@dietz.com',
     image_url: '/customers/steph-dietz.png',
   },
@@ -60,7 +60,7 @@ const customers = [
   },
   {
     id: 'CC27C14A-0ACF-4F4A-A6C9-D45682C144B9',
-    name: 'Amy Burns',
+    name: 'Randy Danders',
     email: 'amy@burns.com',
     image_url: '/customers/amy-burns.png',
   },
