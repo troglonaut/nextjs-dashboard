@@ -6,6 +6,7 @@ import Table from './table';
 import Pagination from './pagination';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
+// Server component
 export default async function Page({
   searchParams,
 }: {
