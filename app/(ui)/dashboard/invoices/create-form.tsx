@@ -1,3 +1,5 @@
+'use client';
+
 import { CustomerField, Invoice } from '@/app/lib/definitions';
 import Link from 'next/link';
 import {
@@ -8,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { Button } from '@/app/(ui)/button';
 import { createInvoice } from '@/app/lib/actions';
+import { useFormState } from 'react-dom';
 
 export default function Form({
   customers,
@@ -21,8 +24,11 @@ export default function Form({
     status: 'pending' | 'paid';
   };
 }) {
+  const initialState = { message: null, errors: {} };
+  const [state, dispatch] = useFormState(createInvoice, initialState);
+
   return (
-    <form action={createInvoice}>
+    <form action={dispatch}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">
