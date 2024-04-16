@@ -5,6 +5,11 @@ import { InvoicesTableSkeleton } from '../../skeletons';
 import Table from './table';
 import Pagination from './pagination';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 // Server component
 export default async function Page({
